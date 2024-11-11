@@ -1,0 +1,12 @@
+digest: fc46cd8c
+name: dataset
+profile: '{"num_rows": 46329, "num_elements": 277974}'
+schema: '{"mlflow_colspec": [{"type": "integer", "name": "Type", "required": true},
+  {"type": "double", "name": "Air temperature [K]", "required": true}, {"type": "double",
+  "name": "Process temperature [K]", "required": true}, {"type": "double", "name":
+  "Rotational speed [rpm]", "required": true}, {"type": "double", "name": "Torque
+  [Nm]", "required": true}, {"type": "double", "name": "Tool wear [min]", "required":
+  true}]}'
+source: '{"tags": {"mlflow.user": "User", "mlflow.source.name": "app.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "682857d4e04ff34c72044bee9c5faee5096a88ad"}}'
+source_type: code

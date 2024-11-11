@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ab8e9a63de7b48bcb2b3cf4a160c6fa3/artifacts
+end_time: 1730433162945
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab8e9a63de7b48bcb2b3cf4a160c6fa3
+run_name: unruly-fowl-643
+run_uuid: ab8e9a63de7b48bcb2b3cf4a160c6fa3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730433156707
+status: 3
+tags: []
+user_id: User

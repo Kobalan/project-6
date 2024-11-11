@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/bfc8e8cdda8544e388a367aa8c483f1f/artifacts
+end_time: 1730371584152
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bfc8e8cdda8544e388a367aa8c483f1f
+run_name: sneaky-tern-12
+run_uuid: bfc8e8cdda8544e388a367aa8c483f1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730371572616
+status: 4
+tags: []
+user_id: User

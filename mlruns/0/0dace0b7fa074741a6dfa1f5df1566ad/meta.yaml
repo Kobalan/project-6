@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0dace0b7fa074741a6dfa1f5df1566ad/artifacts
+end_time: 1730433153636
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dace0b7fa074741a6dfa1f5df1566ad
+run_name: brawny-swan-167
+run_uuid: 0dace0b7fa074741a6dfa1f5df1566ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730433138866
+status: 4
+tags: []
+user_id: User

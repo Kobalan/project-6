@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/176db63c06fc4b0a8c161d8084d06c50/artifacts
+end_time: 1730372902867
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 176db63c06fc4b0a8c161d8084d06c50
+run_name: abrasive-ray-945
+run_uuid: 176db63c06fc4b0a8c161d8084d06c50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730372887489
+status: 4
+tags: []
+user_id: User

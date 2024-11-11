@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/96f9edf6f49e476e907d60ff1b5c416e/artifacts
+end_time: 1730432946596
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 96f9edf6f49e476e907d60ff1b5c416e
+run_name: flawless-frog-666
+run_uuid: 96f9edf6f49e476e907d60ff1b5c416e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730432941670
+status: 4
+tags: []
+user_id: User

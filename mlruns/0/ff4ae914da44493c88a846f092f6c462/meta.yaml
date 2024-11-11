@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ff4ae914da44493c88a846f092f6c462/artifacts
+end_time: 1730432431992
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ff4ae914da44493c88a846f092f6c462
+run_name: thundering-elk-487
+run_uuid: ff4ae914da44493c88a846f092f6c462
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730432427487
+status: 4
+tags: []
+user_id: User

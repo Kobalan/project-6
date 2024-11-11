@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1b5c3beccc904807b696f25da8575b89/artifacts
+end_time: 1730373185537
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1b5c3beccc904807b696f25da8575b89
+run_name: unleashed-frog-249
+run_uuid: 1b5c3beccc904807b696f25da8575b89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730373177816
+status: 4
+tags: []
+user_id: User

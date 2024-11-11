@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/044ea41c16684589ba579b2dabfcb1c2/artifacts
+end_time: 1730373662045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 044ea41c16684589ba579b2dabfcb1c2
+run_name: masked-gull-992
+run_uuid: 044ea41c16684589ba579b2dabfcb1c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730373658379
+status: 3
+tags: []
+user_id: User

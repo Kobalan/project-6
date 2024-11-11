@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/dd821662ceb94a4e99ec5e0637ddd3be/artifacts
+end_time: 1730435068396
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd821662ceb94a4e99ec5e0637ddd3be
+run_name: skillful-ox-125
+run_uuid: dd821662ceb94a4e99ec5e0637ddd3be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730435053702
+status: 4
+tags: []
+user_id: User

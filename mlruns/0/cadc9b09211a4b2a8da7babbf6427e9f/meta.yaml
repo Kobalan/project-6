@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cadc9b09211a4b2a8da7babbf6427e9f/artifacts
+end_time: 1730371570733
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cadc9b09211a4b2a8da7babbf6427e9f
+run_name: merciful-grub-223
+run_uuid: cadc9b09211a4b2a8da7babbf6427e9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730371565993
+status: 4
+tags: []
+user_id: User

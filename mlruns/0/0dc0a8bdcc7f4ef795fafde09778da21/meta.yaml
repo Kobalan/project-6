@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0dc0a8bdcc7f4ef795fafde09778da21/artifacts
+end_time: 1730434239176
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dc0a8bdcc7f4ef795fafde09778da21
+run_name: sedate-mare-394
+run_uuid: 0dc0a8bdcc7f4ef795fafde09778da21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730434225792
+status: 4
+tags: []
+user_id: User

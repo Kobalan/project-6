@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4dea3a5f524749a28f268e857a7a2eb6/artifacts
+end_time: 1730432661955
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4dea3a5f524749a28f268e857a7a2eb6
+run_name: enchanting-elk-627
+run_uuid: 4dea3a5f524749a28f268e857a7a2eb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730432657328
+status: 4
+tags: []
+user_id: User

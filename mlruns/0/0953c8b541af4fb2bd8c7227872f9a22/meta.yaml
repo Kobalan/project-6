@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0953c8b541af4fb2bd8c7227872f9a22/artifacts
+end_time: 1730432953429
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0953c8b541af4fb2bd8c7227872f9a22
+run_name: smiling-bat-787
+run_uuid: 0953c8b541af4fb2bd8c7227872f9a22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730432950533
+status: 3
+tags: []
+user_id: User

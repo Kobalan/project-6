@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4271443798444f2a9f35455ecf8e3f25/artifacts
+end_time: 1730371201082
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4271443798444f2a9f35455ecf8e3f25
+run_name: flawless-stork-648
+run_uuid: 4271443798444f2a9f35455ecf8e3f25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730371188608
+status: 4
+tags: []
+user_id: User

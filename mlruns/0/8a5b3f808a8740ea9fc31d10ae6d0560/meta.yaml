@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8a5b3f808a8740ea9fc31d10ae6d0560/artifacts
+end_time: 1730373656302
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a5b3f808a8740ea9fc31d10ae6d0560
+run_name: defiant-slug-730
+run_uuid: 8a5b3f808a8740ea9fc31d10ae6d0560
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730373643754
+status: 4
+tags: []
+user_id: User

@@ -1,0 +1,9 @@
+pandas
+numpy
+streamlit
+scikit-learn
+zenml
+dill
+imblearn
+pymongo
+streamlit_option_menu
