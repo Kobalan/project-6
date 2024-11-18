@@ -7,3 +7,4 @@ dill
 imblearn
 pymongo
 streamlit_option_menu
+mlflow
