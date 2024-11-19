@@ -27,7 +27,7 @@ if SELECT=='Home':
     components.html(f"""<html><p><h1 style="font-family:Neutro; font-size:40px">PROJECT NAME:   PREDICTIVE MAINTAINENCE FOR MANUFACTURING EQUIPMENT</h1></p></html>""")   
     Col1,Col2=st.columns(2)
     with Col1:
-        st.image('./Pictures/capture_1.jpg')
+        st.image('./Pictures/Capture_1.jpg')
         st.image('./Pictures/capture.jpg')
         st.image('./Pictures/capture1.jpg')
         st.image('./Pictures/workflow2.jpg')
