@@ -5,9 +5,9 @@ import numpy as np
 import json
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
-from pipelines.model_pipeline import Model
-from zenml.client import Client
-from zenml.integrations.mlflow.mlflow_utils import get_tracking_uri
+#from pipelines.model_pipeline import Model
+#from zenml.client import Client
+#from zenml.integrations.mlflow.mlflow_utils import get_tracking_uri
 
 st.set_page_config(page_title= "Predictive Maintainence for Manufacturing Equipment | By M.Kobalan",
                    layout= "wide",
@@ -98,9 +98,9 @@ if SELECT=='Model':
                         pred1=model1.predict(df.values)
                         pred2=model2.predict(df.values)
 
-                        print(f" For MLFLOW:Now run  mlflow ui --backend-store-uri '{Client().active_stack.experiment_tracker.get_tracking_uri()}'")
-                        print(f" For ZENML:Now run  zenml up --blocking'")
-                        print("To inspect your experiment runs within the mlflow UI.You can find your runs tracked within the mlflow_tracker_pipeline experiment")
+                        #print(f" For MLFLOW:Now run  mlflow ui --backend-store-uri '{Client().active_stack.experiment_tracker.get_tracking_uri()}'")
+                        #print(f" For ZENML:Now run  zenml up --blocking'")
+                        #print("To inspect your experiment runs within the mlflow UI.You can find your runs tracked within the mlflow_tracker_pipeline experiment")
                         st.balloons()                      
                         components.html(f"""<html><body><h1 style="font-family:Google Sans; font-size:40px"> Predicted Target={pred1[0]}, Predicted Failure Type={pred2[0]} </h1></body></html>""")            
                         st.success("Models Created Successfully")         
