@@ -27,7 +27,7 @@ Project Organization
  ![image](maintainence.jpg)
 
 # project-Dashboard:
-  https://project-6-6dte.onrender.com
+  [https://project-6-6dte.onrender.com](https://project-6-4agx.onrender.com/)
 # Overview
    The goal is to develop a predictive maintenance model that can predict equipment failures before they occur. The dataset includes sensor readings and maintenance logs from a variety of machines.
 
