@@ -24,10 +24,7 @@ Project Organization
 
 --------
 
-# Airbnb Data Analysis and Visualization
-
-
- ![image](Pictures\maintainence.jpg)
+ ![image](maintainence.jpg)
 
 # project-Dashboard:
   https://project-6-6dte.onrender.com
