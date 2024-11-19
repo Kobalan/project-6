@@ -27,22 +27,22 @@ if SELECT=='Home':
     components.html(f"""<html><p><h1 style="font-family:Neutro; font-size:40px">PROJECT NAME:   PREDICTIVE MAINTAINENCE FOR MANUFACTURING EQUIPMENT</h1></p></html>""")   
     Col1,Col2=st.columns(2)
     with Col1:
-        st.image('./Pictures/capture_1.png')
-        st.image('./Pictures/capture.png')
-        st.image('./Pictures/capture1.png')
+        st.image('./Pictures/capture_1.jpg')
+        st.image('./Pictures/capture.jpg')
+        st.image('./Pictures/capture1.jpg')
         st.image('./Pictures/workflow2.jpg')
-        st.image('./Pictures/capture9.png')
-        st.image('./Pictures/capture10.png')
-        st.image('./Pictures/capture11.png')
-        st.image('./Pictures/Predictive-maintenance-workflow.png')
+        st.image('./Pictures/capture9.jpg')
+        st.image('./Pictures/capture10.jpg')
+        st.image('./Pictures/capture11.jpg')
+        st.image('./Pictures/Predictive-maintenance-workflow.jpg')
     with Col2:
-        st.image('./Pictures/capture_2.png')
+        st.image('./Pictures/capture_2.jpg')
         st.image('./Pictures/maintainence.jpg')
-        st.image('./Pictures/capture4.png')
-        st.image('./Pictures/capture5.png')
-        st.image('./Pictures/capture6.png')
-        st.image('./Pictures/capture7.png')
-        st.image('./Pictures/capture8.png')
+        st.image('./Pictures/capture4.jpg')
+        st.image('./Pictures/capture5.jpg')
+        st.image('./Pictures/capture6.jpg')
+        st.image('./Pictures/capture7.jpg')
+        st.image('./Pictures/capture8.jpg')
 
 if SELECT=='About Project':
     Col3,Col4=st.columns(2)
@@ -61,8 +61,8 @@ if SELECT=='About Project':
                     </p>
                     </body>  </html>  """, height=800,)
     with Col4:
-        st.image('./Pictures/overflow.png')
-        st.image('./Pictures/mlprocess.png')
+        st.image('./Pictures/overflow.jpg')
+        st.image('./Pictures/mlprocess.jpg')
 
 if SELECT=='Model':
 
@@ -107,5 +107,5 @@ if SELECT=='Model':
                     except ValueError:
                         st.warning("Please Fill the Value")    
  
-        st.image('./Pictures/col_details.png')
+        st.image('./Pictures/col_details.jpg')
         
