@@ -35,7 +35,7 @@ class ROC_AUC_Score(Evaluation):
             mse: float
         """
         try:
-            logging.info("Entered the calculate_score method of the ROC_AUC_Score class")
+            logging.info("Entered the calculate_score method of the ROC_AUC_Score class...")
             rScore = roc_auc_score(y_true, y_pred,multi_class='ovr')
             logging.info("The ROC_AUC_Score value is: " + str(rScore))
             return rScore
@@ -61,7 +61,7 @@ class Accuracy_Score(Evaluation):
             r2_score: float
         """
         try:
-            logging.info("Entered the calculate_score method of the Accuracy_Score class")
+            logging.info("Entered the calculate_score method of the Accuracy_Score class...")
             acc = accuracy_score(y_true, y_pred)
             logging.info("The Accuracy score value is: " + str(acc))
             return acc
@@ -86,7 +86,7 @@ class Precision_Score(Evaluation):
             r2_score: float
         """
         try:
-            logging.info("Entered the calculate_score method of the Precision_Score class")
+            logging.info("Entered the calculate_score method of the Precision_Score class...")
             Prec = precision_score(y_true, y_pred,average='weighted')
             logging.info("The Precision score value is: " + str(Prec))
             return Prec
@@ -110,7 +110,7 @@ class F1_Score(Evaluation):
             r2_score: float
         """
         try:
-            logging.info("Entered the calculate_score method of the F1_Score class")
+            logging.info("Entered the calculate_score method of the F1_Score class...")
             F1 = f1_score(y_true, y_pred,average='weighted')
             logging.info("The F1 score value is: " + str(F1))
             return F1
@@ -134,7 +134,7 @@ class recall_Score(Evaluation):
             r2_score: float
         """
         try:
-            logging.info("Entered the calculate_score method of the recall_Score class")
+            logging.info("Entered the calculate_score method of the recall_Score class...")
             recall = recall_score(y_true, y_pred,average='weighted')
             logging.info("The recall score value is: " + str(recall))
             return recall
@@ -163,7 +163,7 @@ def evaluation_model2(
     """
     try:
 
-        logging.info("Evaluation2 Started")
+        logging.info("Evaluation2 Started...")
         
         prediction_proba=model.predict_proba(x_test.values)
         rScore_class = ROC_AUC_Score()

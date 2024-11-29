@@ -26,8 +26,9 @@ class DataPreprocessStrategy(DataStrategy):
         Removes columns which are not required, fills missing values with median average values, and converts the data type to float.
         """
         try:
-            logging.info("Dropping unneccessary Columns in the DataFrame")
+            logging.info("Dropping unneccessary Columns in the DataFrame...")
             data = data.drop(['UDI','Product ID'],axis=1,)
+            data=data.drop_duplicates()
             Scaler=MinMaxScaler()       
             numerical_Columns=[ 'Air temperature [K]', 'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]', 'Tool wear [min]']
             logging.info("Numerical Column preprocessing Started")
@@ -46,7 +47,7 @@ class DataPreprocessStrategy(DataStrategy):
             with open(r'./artifacts/Scaler.pkl', 'wb') as File:
                 dill.dump(Scaler,File)   
             
-            logging.info("Categorical Column preprocessing Started") 
+            logging.info("Categorical Column preprocessing Started...") 
             data['Type']=data['Type'].map({'L':1,'M':2,'H':3})
             data['Failure Type']=data['Failure Type'].map({'No Failure':0,'Power Failure':1,'Tool Wear Failure':2,'Overstrain Failure':3, 'Random Failures':4,'Heat Dissipation Failure':5})
             #data.to_csv('./data/Cleaned_dataset.csv',index=False)
@@ -68,13 +69,13 @@ class DataDivideStrategy1(DataStrategy):
         try:
             X = data.drop(['Target', 'Failure Type'], axis=1)
             y = data["Target"]
-            logging.info("Over-Sampling technique initiated")
+            logging.info("Over-Sampling technique initiated...")
             SM=SMOTE()
             X_resampled,y_resampled=SM.fit_resample(X,y)
             X_train, X_test, y_train, y_test = train_test_split(
                 X_resampled, y_resampled, test_size=0.2, random_state=42
             )
-            logging.info("DataDivide Strategy1 Completed")
+            logging.info("DataDivide Strategy1 Completed...")
             return X_train, X_test, y_train, y_test
 
         except Exception as e:
@@ -89,17 +90,17 @@ class DataDivideStrategy2(DataStrategy):
         """
         Divides the data into train and test data.
         """
-        logging.info("DataDivide Strategy2 Started")
+        logging.info("DataDivide Strategy2 Started...")
         try:
             X = data.drop(['Target', 'Failure Type'], axis=1)
             y = data["Failure Type"]
-            logging.info("Over-Sampling technique initiated")
+            logging.info("Over-Sampling technique initiated...")
             SM=SMOTE()
             X_resampled,y_resampled=SM.fit_resample(X,y)
             X_train, X_test, y_train, y_test = train_test_split(
                 X_resampled, y_resampled, test_size=0.2, random_state=42
             )
-            logging.info("DataDivide Strategy2 Completed")
+            logging.info("DataDivide Strategy2 Completed...")
             return X_train, X_test, y_train, y_test
         
         except Exception as e:

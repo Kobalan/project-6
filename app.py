@@ -8,6 +8,8 @@ import streamlit.components.v1 as components
 from pipelines.model_pipeline import Model
 from zenml.client import Client
 from zenml.integrations.mlflow.mlflow_utils import get_tracking_uri
+import pymongo as py
+
 
 st.set_page_config(page_title= "Predictive Maintainence for Manufacturing Equipment | By M.Kobalan",
                    layout= "wide",
@@ -78,7 +80,8 @@ if SELECT=='Model':
             Tool_wear =st.text_input(label='Enter the Tool_wear value')
             button=st.form_submit_button(label='Submit')
             
-            if button:                
+            if button:       
+                    #Model()
                     try:
                         with open('./data/dict_Type.json','r') as File:
                             dict_Type=json.load(File)
@@ -104,7 +107,16 @@ if SELECT=='Model':
                         print("To inspect your experiment runs within the mlflow UI.You can find your runs tracked within the mlflow_tracker_pipeline experiment")
                         st.balloons()                      
                         components.html(f"""<html><body><h1 style="font-family:Google Sans; font-size:25px"> Predicted Target={pred1[0]}<br> Predicted Failure Type={key[0]} </h1></body></html>""")            
-                        #st.success("Models Created Successfully")         
+                        Client=py.MongoClient('mongodb+srv://kobalanm2705:Kobalan270599@cluster0.ohlri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+                        mydict = {"Type": Type,'Air temperature [K]': float(Air_temperature),
+                                  'Process temperature [K]':float(Process_temperature),'Rotational speed [rpm]':int(Rotational_speed),
+                                  'Torque [Nm]':float(Torque),'Tool wear [min]':float(Tool_wear),'Target':int(pred1[0]),'Failure Type':key[0]}
+                        db=Client['Project_final']
+                        coll=db['data_report']
+                        id=coll.insert_one(mydict)
+                        print('ID',id.inserted_id)
+
+                        st.success("Model prediction Completed")         
                     except ValueError:
                         st.warning("Please Fill the Value")    
  
