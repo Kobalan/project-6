@@ -6,7 +6,7 @@ from zenml import step
 from zenml.client import Client
 import mlflow
 import dill
-experiment_tracker = Client().active_stack.experiment_tracker
+#experiment_tracker = Client().active_stack.experiment_tracker
 
 class Model_Trainer:
     """
@@ -28,7 +28,7 @@ class Model_Trainer:
         return reg
 
 
-@step(experiment_tracker=experiment_tracker.name)
+@step#(experiment_tracker=experiment_tracker.name)
 
 def Model1(
     x_train: pd.DataFrame,

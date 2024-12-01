@@ -11,7 +11,7 @@ from zenml import step
 from zenml.client import Client
 #from typing import Tuple
 
-experiment_tracker = Client().active_stack.experiment_tracker
+#experiment_tracker = Client().active_stack.experiment_tracker
 
 class Evaluation(ABC):
     """
@@ -146,7 +146,7 @@ class recall_Score(Evaluation):
             raise e
 
 
-@step(experiment_tracker=experiment_tracker.name)
+@step#(experiment_tracker=experiment_tracker.name)
 def evaluation_model2(
     model: ClassifierMixin, x_test: pd.DataFrame, y_test: pd.Series
 ): 

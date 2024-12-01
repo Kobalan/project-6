@@ -4,9 +4,9 @@ from zenml import step
 from zenml.client import Client
 import mlflow
 import pymongo as py
-experiment_tracker = Client().active_stack.experiment_tracker
+#experiment_tracker = Client().active_stack.experiment_tracker
 
-@step(experiment_tracker=experiment_tracker.name)
+@step#(experiment_tracker=experiment_tracker.name)
 def ingest_data() -> pd.DataFrame:
     """
     Args:
