@@ -101,10 +101,10 @@ if SELECT=='Model':
                         pred1=model1.predict(df.values)
                         pred2=model2.predict(df.values)
                         key= [key for key, value in dict_Fail_Type.items() if value ==pred2[0]]
-
-                        print(f" For MLFLOW:Now run  mlflow ui --backend-store-uri '{Client().active_stack.experiment_tracker.get_tracking_uri()}'")
-                        print(f" For ZENML:Now run  zenml up --blocking'")
-                        print("To inspect your experiment runs within the mlflow UI.You can find your runs tracked within the mlflow_tracker_pipeline experiment")
+                        #print("To inspect your experiment runs within the mlflow UI.You can find your runs tracked within the mlflow_tracker_pipeline experiment")
+                        #print(f" For MLFLOW:Now run  mlflow ui --backend-store-uri '{Client().active_stack.experiment_tracker.get_tracking_uri()}'")
+                        #print(f" For ZENML:Now run  zenml up --blocking'")
+                        
                         st.balloons()                      
                         components.html(f"""<html><body><h1 style="font-family:Google Sans; font-size:25px"> Predicted Target={pred1[0]}<br> Predicted Failure Type={key[0]} </h1></body></html>""")            
                         Client=py.MongoClient('mongodb+srv://kobalanm2705:Kobalan270599@cluster0.ohlri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
